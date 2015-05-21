@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en-US" ng-app="firstApp">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Chapter 2 Project, Learning AngularJS">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>First AngularJS App</title>
+        <link rel="stylesheet" href="css/welcome.css"> 
+        <link rel="Aton Bridges" href="humans.txt">
+    </head>
+    <body>
+        <div ng-controller="FirstController">
+            <span>Name</span>
+            <input type="text" ng-model="first">
+            <input type="text" ng-model="last">
+            <button ng-click='updateMessage() '>Message</button>
+            <hr>
+            {{heading + message}}
+        </div>
+        <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+        <script src="js/first.js"></script>
+    </body>
+</html>
